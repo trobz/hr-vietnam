@@ -1,0 +1,100 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_vn_school
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-12 03:59+0000\n"
+"PO-Revision-Date: 2018-06-12 03:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_vn_school
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_school_categ_id
+msgid "Category"
+msgstr "Loại"
+
+#. module: l10n_vn_school
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_category_code
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_school_code
+msgid "Code"
+msgstr "Mã"
+
+#. module: l10n_vn_school
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_category_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: l10n_vn_school
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_category_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: l10n_vn_school
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_category_display_name
+msgid "Display Name"
+msgstr "Tên Hiển Thị"
+
+#. module: l10n_vn_school
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_category_id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_vn_school
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_category___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: l10n_vn_school
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_category_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: l10n_vn_school
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_category_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: l10n_vn_school
+#: model:ir.model.fields,field_description:l10n_vn_school.field_school_category_name
+msgid "Name"
+msgstr "Tên"
+
+#. module: l10n_vn_school
+#: model:ir.actions.act_window,name:l10n_vn_school.school_school_action
+#: model:ir.ui.menu,name:l10n_vn_school.menu_school_school_action
+#: model:ir.ui.view,arch_db:l10n_vn_school.school_school_form_view
+#: model:ir.ui.view,arch_db:l10n_vn_school.school_school_list_view
+#: model:ir.ui.view,arch_db:l10n_vn_school.school_school_search_view
+msgid "School"
+msgstr "Trường Học"
+
+#. module: l10n_vn_school
+#: model:ir.actions.act_window,name:l10n_vn_school.open_view_school_category_form
+#: model:ir.ui.menu,name:l10n_vn_school.menu_view_school_category_form
+#: model:ir.ui.view,arch_db:l10n_vn_school.view_school_category_form
+#: model:ir.ui.view,arch_db:l10n_vn_school.view_school_category_list
+msgid "School Category"
+msgstr "Loại Trường"
+
+#. module: l10n_vn_school
+#: model:ir.ui.menu,name:l10n_vn_school.menu_school_list
+msgid "School List"
+msgstr "Danh Sách Trường"
+
+#. module: l10n_vn_school
+#: model:ir.model,name:l10n_vn_school.model_school_category
+msgid "school.category"
+msgstr "DS Loại Trường"
+
+#. module: l10n_vn_school
+#: model:ir.model,name:l10n_vn_school.model_school_school
+msgid "school.school"
+msgstr "Danh Sách Trường"
+

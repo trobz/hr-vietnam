@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="school_category_HDQGHCM" model="school.category">
+        <field name="name">Đại học Quốc gia Thành phố Hồ Chí Minh</field>
+        <field name="code">HDQGHCM</field>
+    </record>
+    <record id="school_category_DHH" model="school.category">
+        <field name="name">Đại học Huế</field>
+        <field name="code">DHH</field>
+    </record>
+    <record id="school_category_DHDN" model="school.category">
+        <field name="name">Đại học Đà Nẵng</field>
+        <field name="code">DHDN</field>
+    </record>
+    <record id="school_category_DHTN" model="school.category">
+        <field name="name">Đại học Thái Nguyên</field>
+        <field name="code">DHTN</field>
+    </record>
+    <record id="school_category_DHQGHN" model="school.category">
+        <field name="name">Đại học Quốc gia Hà Nội</field>
+        <field name="code">DHQGHN</field>
+    </record>
+    <record id="school_category_DHCL" model="school.category">
+        <field name="name">Đại học công lập</field>
+        <field name="code">DHCL</field>
+    </record>
+    <record id="school_category_HV" model="school.category">
+        <field name="name">Học viện</field>
+        <field name="code">HV</field>
+    </record>
+    <record id="school_category_DHTTDL" model="school.category">
+        <field name="name">Đại học tư thục hoặc dân lập</field>
+        <field name="code">DHTTDL</field>
+    </record>
+    <record id="school_category_PH" model="school.category">
+        <field name="name">Phân hiệu</field>
+        <field name="code">PH</field>
+    </record>
+</odoo>
+
