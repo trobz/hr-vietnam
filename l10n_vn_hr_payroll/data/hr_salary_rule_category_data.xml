@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+    <!--Salary rule category -->
+    <record id="REF" model="hr.salary.rule.category">
+        <field name="name">Amount for Reference</field>
+        <field name="code">REF</field>
+    </record>
+
+    <record id="COMPA" model="hr.salary.rule.category">
+        <field name="name">Computed Amount</field>
+        <field name="code">COMPA</field>
+    </record>
+
+    <record id="COMP" model="hr.salary.rule.category">
+        <field name="name">Company Contribution</field>
+        <field name="code">COMP</field>
+    </record>
+
+    <record id="hr_payroll.ALW" model="hr.salary.rule.category">
+        <field name="name">Taxable Allowance and Bonus</field>
+        <field name="code">TAX_ALW</field>
+    </record>
+
+    <record id="UNTAX_ALW" model="hr.salary.rule.category">
+        <field name="name">Untaxed Allowance and Bonus</field>
+        <field name="code">UNTAX_ALW</field>
+    </record>
+
+    <record id="DED" model="hr.salary.rule.category">
+        <field name="name">Deduction before Tax</field>
+        <field name="code">TAX_DED</field>
+    </record>
+
+    <record id="UNTAX_DED" model="hr.salary.rule.category">
+        <field name="name">Deduction after Tax</field>
+        <field name="code">UNTAX_DED</field>
+    </record>
+
+</odoo>
+
