@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_applicant_view_form_inherit" model="ir.ui.view">
+        <field name="name">hr.applicant.view.form.inherit</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.crm_case_form_view_job"/>
+        <field name="arch" type="xml">
+            <field name="type_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <xpath expr="//sheet//group[1]" position="after">
+                <group>
+                    <group string="Citizen Information">
+                        <field name="identification_id"/>
+                        <field name="id_date_issue"/>
+                        <field name="id_place_issue_id"/>
+                        <field name="passport_id"/>
+                    </group>
+                    <group string="Other Infomation">
+                        <field name="ethnic_group_id"/>
+                        <field name="religion"/>
+                        <field name="work_permit_expire_date"/>
+                    </group>
+                </group>
+                <separator string="Education Information"/>
+                <field name="education_ids" mode="tree" nolabel="1" colspan="4">
+                    <tree string="Education" editable="bottom">
+                        <field name="level"/>
+                        <field name="school_id"/>
+                        <field name="degree"/>
+                        <field name="major"/>
+                        <field name="graduated_year"/>
+                        <field name="main_qualification"/>
+                    </tree>
+                </field>
+            </xpath>
+        </field>
+    </record>
+</odoo>
