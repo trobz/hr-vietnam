@@ -1,0 +1,213 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_contract_vn
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-12 10:22+0000\n"
+"PO-Revision-Date: 2018-06-12 10:22+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_ids
+#: model:ir.ui.view,arch_db:hr_contract_vn.view_hr_contract_form_inherit
+msgid "Allowance"
+msgstr "Khoản Cộng"
+
+#. module: hr_contract_vn
+#: model:ir.ui.view,arch_db:hr_contract_vn.view_hr_contract_form_inherit
+msgid "Allowance List"
+msgstr "Danh Sách Khoản Cộng"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_type_allowance_ids
+msgid "Allowance Template"
+msgstr "Khoản Cộng Theo Loại HĐ"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_amount
+msgid "Amount"
+msgstr "Tổng Tiền"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_apply_on
+msgid "Apply on"
+msgstr "Áp Dụng Theo"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_code
+msgid "Code"
+msgstr "Mã"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_contract_id
+msgid "Contract"
+msgstr "Hợp Đồng"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_contract_time
+msgid "Contract Time"
+msgstr "Thời Gian HĐ"
+
+#. module: hr_contract_vn
+#: model:ir.model,name:hr_contract_vn.model_hr_contract_type
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_contract_type_id
+msgid "Contract Type"
+msgstr "Loại Hợp Đồng"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: hr_contract_vn
+#: selection:hr.contract,contract_time:0
+#: model:ir.ui.view,arch_db:hr_contract_vn.view_hr_contract_search_inherit
+msgid "Current"
+msgstr "Hiện Tại"
+
+#. module: hr_contract_vn
+#: selection:hr.contract.allowance,apply_on:0
+msgid "Daily"
+msgstr "Ngày"
+
+#. module: hr_contract_vn
+#: model:ir.ui.view,arch_db:hr_contract_vn.view_hr_contract_search_inherit
+msgid "Department"
+msgstr "Phòng Ban"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_description
+msgid "Description"
+msgstr "Mô Tả"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_display_name
+msgid "Display Name"
+msgstr "Tên Hiển Thị"
+
+#. module: hr_contract_vn
+#: model:ir.model,name:hr_contract_vn.model_hr_employee
+msgid "Employee"
+msgstr "Nhân Viên"
+
+#. module: hr_contract_vn
+#: model:ir.model,name:hr_contract_vn.model_hr_contract
+msgid "Employee Contract"
+msgstr "Hợp Đồng Lao Động"
+
+#. module: hr_contract_vn
+#: selection:hr.contract,contract_time:0
+#: model:ir.ui.view,arch_db:hr_contract_vn.view_hr_contract_search_inherit
+msgid "Future"
+msgstr "Tương Lai"
+
+#. module: hr_contract_vn
+#: selection:hr.contract.allowance,apply_on:0
+msgid "Hourly"
+msgstr "Giờ"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance___last_update
+msgid "Last Modified on"
+msgstr "Ngày Sửa Cuối"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: hr_contract_vn
+#: selection:hr.contract.allowance,apply_on:0
+msgid "Monthly"
+msgstr "Tháng"
+
+#. module: hr_contract_vn
+#: selection:hr.contract,contract_time:0
+msgid "Past"
+msgstr "Quá Khứ"
+
+#. module: hr_contract_vn
+#: code:addons/hr_contract_vn/models/hr_contract_allowance.py:31
+#: code:addons/hr_contract_vn/models/hr_contract_allowance.py:41
+#, python-format
+msgid "Please select rule in salary structure on contract."
+msgstr "Bạn chỉ được chon quy tắc lương đã được định nghĩa trong cấu trúc lương của hợp đồng này."
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_allowance_rule_id
+msgid "Rule"
+msgstr "Quy Tắc Lương"
+
+#. module: hr_contract_vn
+#: model:ir.ui.view,arch_db:hr_contract_vn.hr_contract_type_view_form_inherit
+msgid "Template Allowance"
+msgstr "Danh Sách Khoản Cộng"
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,help:hr_contract_vn.field_hr_contract_type_count_working_seniority
+msgid "The contracts which activate this field will be taken into account the calculation of working seniority"
+msgstr "Thâm niên nhân viên sẽ được tính dựa vào HĐ đang kích hoạt."
+
+#. module: hr_contract_vn
+#: code:addons/hr_contract_vn/models/hr_contract.py:72
+#, python-format
+msgid "The previous contract (ID: %s, %s) must be ended before creating a new contract."
+msgstr "HĐ củ (ID: %s, %s) phải kết thúc trước khi tạo HĐ mới."
+
+#. module: hr_contract_vn
+#: code:addons/hr_contract_vn/models/hr_employee.py:51
+#, python-format
+msgid "The previous contract (ID: %s, %s) should be ended                         before create a new contract"
+msgstr "HĐ củ (ID: %s, %s) phải kết thúc trước khi tạo HĐ mới."
+
+#. module: hr_contract_vn
+#: code:addons/hr_contract_vn/models/hr_contract.py:99
+#, python-format
+msgid "This contract is being used. You cannnot delete it."
+msgstr "Hợp đồng này đã được sử dụng. Bạn không được xóa."
+
+#. module: hr_contract_vn
+#: model:ir.model.fields,field_description:hr_contract_vn.field_hr_contract_type_count_working_seniority
+msgid "Working Seniority"
+msgstr "Thâm Niên"
+
+#. module: hr_contract_vn
+#: code:addons/hr_contract_vn/models/hr_contract.py:88
+#, python-format
+msgid "You cannot have 2 contracts of an employee overlapped on the same duration."
+msgstr "Một nhân viên có 2 Hợp Đồng trùng lắp thời gian."
+
+#. module: hr_contract_vn
+#: code:addons/hr_contract_vn/models/hr_contract.py:95
+#, python-format
+msgid "You only can delete draft contract!"
+msgstr "Bạn chỉ được xóa hợp đồng phát thảo!"
+
+#. module: hr_contract_vn
+#: model:ir.model,name:hr_contract_vn.model_hr_contract_allowance
+msgid "hr.contract.allowance"
+msgstr "Thiết Lập Khoản Cộng"
+
