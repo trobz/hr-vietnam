@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<odoo noupdate="1">
+
+    <!-- Mail template is done in a NOUPDATE block
+         so users can freely customize/delete them -->
+    <!--Email template -->
+    <record id="email_template_hr_document_expiring_30_days"
+            model="mail.template">
+        <field name="name">Documents expiring in 30 days</field>
+        <field name="email_from">
+            ${user.email or user.company_id.email or 'noreply@' + user.company_id.name + '.com'}
+        </field>
+        <field name="subject">Documents expiring in 30 days</field>
+        <field name="email_to">${object.get_email_to()}</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="auto_delete" eval="True"/>
+        <field name="body_html"><![CDATA[
+				<div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; ">
+				    ${object.get_email_content(False)}
+				</div>
+            ]]></field>
+    </record>
+
+    <!--Email template -->
+    <record id="email_template_hr_document_expired" model="mail.template">
+        <field name="name">Documents expired</field>
+        <field name="email_from">
+            ${user.email or user.company_id.email or 'noreply@' + user.company_id.name + '.com'}
+        </field>
+        <field name="subject">Documents expired</field>
+        <field name="email_to">${object.get_email_to()}</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="auto_delete" eval="True"/>
+        <field name="body_html"><![CDATA[
+				<div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; ">
+				    ${object.get_email_content(True)}
+				</div>
+            ]]></field>
+    </record>
+</odoo>
