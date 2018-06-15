@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="view_hr_contract_form_inherit" model="ir.ui.view">
+        <field name="name">view.hr.contract.view.form.inherit</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[2]" position="after">
+                <page string="Allowance List" name="allowance">
+                    <field name="allowance_ids" col="4" colspan="4">
+                        <tree string="Allowance" editable="top">
+                            <field name="rule_id" required="1"/>
+                            <field name="code" invisible="1"/>
+                            <field name="description"/>
+                            <field name="amount"/>
+                            <field name="apply_on"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_hr_contract_search_inherit" model="ir.ui.view">
+        <field name="name">view.hr.contract.search.inherit</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_search"/>
+        <field name="arch" type="xml">
+            <filter context="{'group_by':'type_id'}" position="after">
+                <filter string="Department"
+                        context="{'group_by':'department_id'}"/>
+            </filter>
+            <field name="name" position="before">
+                <filter string="Current" name="current"
+                        domain="[('date_start', '&lt;=', context_today().strftime('%%Y-%%m-%%d')), '|', ('date_end','&gt;',context_today().strftime('%%Y-%%m-%%d')), ('date_end','=',False)]"/>
+                <filter string="Future"
+                        domain="[('date_start','&gt;', context_today().strftime('%%Y-%%m-%%d'))]"/>
+            </field>
+        </field>
+    </record>
+    <record id="view_hr_contract_tree_inherit_contract_time"
+            model="ir.ui.view">
+        <field name="name">view.hr.contract.tree.inherit.contract.time</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_tree"/>
+        <field name="arch" type="xml">
+            <tree position="attributes">
+                <attribute name="colors">
+                    grey:contract_time=='past';blue:contract_time=='future'
+                </attribute>
+            </tree>
+            <field name="employee_id" position="after">
+                <field name="department_id"/>
+                <field name="contract_time" invisible="1"/>
+            </field>
+        </field>
+    </record>
+</odoo>

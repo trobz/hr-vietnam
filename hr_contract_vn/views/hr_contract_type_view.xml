@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_contract_type_view_form_inherit" model="ir.ui.view">
+        <field name="name">hr.contract.type.view.form.inherit</field>
+        <field name="model">hr.contract.type</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_type_view_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='name']" position="attributes">
+                <attribute name="colspan"/>
+            </xpath>
+            <field name="name" position="after">
+                <field name="count_working_seniority"/>
+                <separator string="Template Allowance" colspan="4"/>
+                <field name="allowance_ids" col="4" colspan="4" nolabel="1">
+                    <tree string="Template Allowance" editable="top">
+                        <field name="rule_id" required="1"/>
+                        <field name="code" invisible="1"/>
+                        <field name="description"/>
+                        <field name="amount"/>
+                        <field name="apply_on"/>
+                    </tree>
+                </field>
+            </field>
+        </field>
+    </record>
+</odoo>
