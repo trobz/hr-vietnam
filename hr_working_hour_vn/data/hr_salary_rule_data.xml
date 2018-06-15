@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="hr_rule_sstvn_working_ot_hours" model="hr.salary.rule">
+        <field name="name">Working OT Hours</field>
+        <field name="sequence" eval="2" />
+        <field name="appears_on_payslip" eval="True" />
+        <field name="code">WorkingOTHours</field>
+        <field name="category_id" ref="l10n_vn_hr_payroll.REF" />
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = worked_days.AttOTWorkingDays and worked_days.AttOTWorkingDays.number_of_hours or 0</field>
+        <field name="note">Worked OT Hours</field>
+    </record>
+
+    <record id="hr_rule_sstvn_working_hours" model="hr.salary.rule">
+        <field name="name">Working Hours</field>
+        <field name="sequence" eval="2" />
+        <field name="appears_on_payslip" eval="True" />
+        <field name="code">WorkingHours</field>
+        <field name="category_id" ref="l10n_vn_hr_payroll.REF" />
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = worked_days.AttWorkingDays and worked_days.AttWorkingDays.number_of_hours or 0
+if payslip.payslip_type == 'based_on_working_days':
+    result = worked_days.WorkingDays and worked_days.WorkingDays.number_of_hours or 0
+        </field>
+        <field name="note">Worked Hours</field>
+    </record>
+
+    <record id="l10n_vn_hr_payroll.hr_rule_sstvn_working_days" model="hr.salary.rule">
+        <field name="amount_python_compute">result = worked_days.WorkingDays and worked_days.WorkingDays.number_of_days or 0
+if payslip.payslip_type == 'based_on_attendance_working_days':
+    result = (worked_days.AttWorkingDays and worked_days.AttWorkingDays.number_of_days or 0) + (worked_days.AttOTWorkingDays and worked_days.AttOTWorkingDays.number_of_days or 0)
+        </field>
+    </record>
+
+    <record id="l10n_vn_hr_payroll.hr_rule_sstvn_working_salary" model="hr.salary.rule">
+        <field name="amount_python_compute">result = WorkingDays * SalPerDay
+if payslip.salary_payslip_type == 'salary_based_on_hours':
+    result = WorkingHours * SalPerHour + WorkingOTHours * SalPerHour
+        </field>
+        <field name="note">Working days x Salary per day or Working hours x Salary per hour</field>
+    </record>
+
+    <record id="l10n_vn_hr_payroll.salary_structure_template_vn" model="hr.payroll.structure">
+        <field
+            eval="[(4, ref('l10n_vn_hr_payroll.hr_rule_sstvn_salary_per_hour')),
+                   (4, ref('hr_working_hour_vn.hr_rule_sstvn_working_ot_hours')),
+                   (4, ref('hr_working_hour_vn.hr_rule_sstvn_working_hours'))]"
+            name="rule_ids"/>
+    </record>
+</odoo>
+
