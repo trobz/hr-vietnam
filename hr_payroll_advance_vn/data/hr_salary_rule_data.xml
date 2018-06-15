@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+    <record id="hr_rule_advanced_salary" model="hr.salary.rule">
+        <field name="name">Advanced Amount on Advanced Payslip</field>
+        <field name="sequence" eval="0"/>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="is_unique_on_payslip" eval="True"/>
+        <field name="code">AdvSal</field>
+        <field name="category_id" ref="ADV"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = payslip.advance_amount
+        </field>
+        <field name="note">When employee request an advanced salary, use this
+            rule to record the advanced amount
+        </field>
+    </record>
+
+    <record id="hr_rule_advanced_salary_total" model="hr.salary.rule">
+        <field name="name">Advanced Salary</field>
+        <field name="sequence" eval="201"/>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="is_unique_on_payslip" eval="True"/>
+        <field name="code">AdvSalTotal</field>
+        <field name="category_id" ref="ADV"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = payslip.sum('AdvSal',
+            from_date=payslip.date_from, to_date=payslip.date_to)
+        </field>
+        <field name="note">Total advance salary will be deducted in the monthly
+            payslip at the end of month
+        </field>
+    </record>
+
+</odoo>
+
