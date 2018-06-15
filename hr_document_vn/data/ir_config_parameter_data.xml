@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="reminder_doc_expiring_in_30_days" model="ir.config_parameter">
+        <field name="key">reminder_expiring_in_30_days</field>
+        <field name="value">False</field>
+    </record>
+    <record id="reminder_doc_expired" model="ir.config_parameter">
+        <field name="key">reminder_doc_expired</field>
+        <field name="value">False</field>
+    </record>
+
+</odoo>

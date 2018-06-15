@@ -1,0 +1,295 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_document_vn
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-28 10:17+0000\n"
+"PO-Revision-Date: 2018-05-28 10:17+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_document_vn
+#: model:mail.template,body_html:hr_document_vn.email_template_hr_document_expiring_30_days
+msgid "\n"
+"				<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"				    ${object.get_email_content(False)}\n"
+"				</div>\n"
+"            "
+msgstr "\n"
+"				<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"				    ${object.get_email_content(False)}\n"
+"				</div>\n"
+"            "
+
+#. module: hr_document_vn
+#: model:mail.template,body_html:hr_document_vn.email_template_hr_document_expired
+msgid "\n"
+"				<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"				    ${object.get_email_content(True)}\n"
+"				</div>\n"
+"            "
+msgstr "\n"
+"				<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"				    ${object.get_email_content(True)}\n"
+"				</div>\n"
+"            "
+
+#. module: hr_document_vn
+#: code:addons/hr_document_vn/models/hr_employee.py:96
+#, python-format
+msgid "\n"
+"        <p>Hello Managers !</p>\n"
+"        <p>Below is the list of %s documents %s:</p>\n"
+"        <p>%s</p>\n"
+"        Regards,\n"
+"        "
+msgstr "\n"
+"        <p>Chào Quản lý Nhân Sự !</p>\n"
+"        <p>Bên dưới là danh sách %s những chứng từ %s:</p>\n"
+"        <p>%s</p>\n"
+"        Regards,\n"
+"        "
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_active
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_search
+msgid "Active"
+msgstr "Kích Hoạt"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_create_uid
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_create_uid
+msgid "Created by"
+msgstr "Được Tạo Bởi"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_create_date
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_create_date
+msgid "Created on"
+msgstr "Ngày Tạo"
+
+#. module: hr_document_vn
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_search
+msgid "Display All"
+msgstr "Tất Cả"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_display_name
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_display_name
+msgid "Display Name"
+msgstr "Tên Hiển Thị"
+
+#. module: hr_document_vn
+#: model:ir.actions.act_window,name:hr_document_vn.action_hr_document
+#: model:ir.actions.act_window,name:hr_document_vn.action_open_hr_document_from_hr_employee
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_form
+msgid "Document"
+msgstr "Chứng Từ"
+
+#. module: hr_document_vn
+#: model:ir.ui.view,arch_db:hr_document_vn.res_config_settings_view_form_inherit
+msgid "Document Email Notification"
+msgstr "Gửi Thông Báo"
+
+#. module: hr_document_vn
+#: model:ir.actions.act_window,name:hr_document_vn.action_hr_document_type
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_type_form
+msgid "Document Type"
+msgstr "Loại Chứng Từ"
+
+#. module: hr_document_vn
+#: model:ir.ui.menu,name:hr_document_vn.menu_hr_document_type
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_type_tree
+msgid "Document Types"
+msgstr "Loại Chứng Từ"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_employee_documents_count
+#: model:ir.ui.menu,name:hr_document_vn.menu_hr_document
+#: model:ir.ui.view,arch_db:hr_document_vn.View_hr_employee_form_inherit_document_button
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_tree
+msgid "Documents"
+msgstr "Tài Liệu"
+
+#. module: hr_document_vn
+#: model:mail.template,subject:hr_document_vn.email_template_hr_document_expired
+msgid "Documents expired"
+msgstr "Chứng Từ Quá Hạn"
+
+#. module: hr_document_vn
+#: model:mail.template,subject:hr_document_vn.email_template_hr_document_expiring_30_days
+msgid "Documents expiring in 30 days"
+msgstr "Chứng từ sẽ hết hạn trong 30 ngày"
+
+#. module: hr_document_vn
+#: model:hr.document.type,name:hr_document_vn.doc_type_driving_license
+msgid "Driving License"
+msgstr "Giấy Phép Lái Xe"
+
+#. module: hr_document_vn
+#: model:ir.model,name:hr_document_vn.model_hr_employee
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_emp_id
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_search
+msgid "Employee"
+msgstr "Nhân Viên"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_expired
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_search
+msgid "Expired"
+msgstr "Hết Hạn"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_expiry_date
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_search
+msgid "Expiry Date"
+msgstr "Ngày Hết Hạn"
+
+#. module: hr_document_vn
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_search
+msgid "Group By..."
+msgstr "Nhóm theo..."
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_id
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_id
+msgid "ID"
+msgstr "Mã ID"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_name
+msgid "ID / Number"
+msgstr "Số Chứng Từ"
+
+#. module: hr_document_vn
+#: model:hr.document.type,name:hr_document_vn.doc_type_identification_card
+msgid "Identification Card"
+msgstr "CMND"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_issue_by
+msgid "Issue By"
+msgstr "Người Cấp"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_issue_date
+msgid "Issue Date"
+msgstr "Ngày Cấp"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_issue_place
+msgid "Issue Place"
+msgstr "Nơi Cấp"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document___last_update
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type___last_update
+msgid "Last Modified on"
+msgstr "Ngày Sửa Cuối"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_write_uid
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_write_uid
+msgid "Last Updated by"
+msgstr "Người Sửa Cuối"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_write_date
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_write_date
+msgid "Last Updated on"
+msgstr "Ngày Cập Nhật Cuối"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_mandatory_expiry_date
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_mandatory_expiry_date
+msgid "Mandatory Expiry Date"
+msgstr "Phải Nhập Ngày Hết Hạn"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_mandatory_issue_by
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_mandatory_issue_by
+msgid "Mandatory Issue By"
+msgstr "Phải Nhập Người Cấp"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_mandatory_issue_date
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_mandatory_issue_date
+msgid "Mandatory Issue Date"
+msgstr "Phải Nhập Ngày Phát Hành"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_mandatory_issue_place
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_mandatory_issue_place
+msgid "Mandatory Issue Place"
+msgstr "Phải Nhập Nơi Phát Hành"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_name
+msgid "Name"
+msgstr "Tên"
+
+#. module: hr_document_vn
+#: model:hr.document.type,name:hr_document_vn.doc_type_passport
+msgid "Passport"
+msgstr "Hộ Chiếu"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_required
+msgid "Required"
+msgstr "Bắt Buộc"
+
+#. module: hr_document_vn
+#: model:hr.document.type,name:hr_document_vn.doc_type_resident_card
+msgid "Resident Card"
+msgstr "Thẻ Công Dân"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_res_config_settings_reminder_doc_expired
+msgid "Send weekly reminder to HR Manager for Documents expired"
+msgstr "Gửi lời nhắc hàng tuần tới Quản lý nhân sự cho Tài liệu đã hết hạn"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_res_config_settings_reminder_doc_expiring_in_30_days
+msgid "Send weekly reminder to HR Manager for Documents expiring in 30 days"
+msgstr "Gửi lời nhắc hàng tuần tới Quản lý nhân sự cho Tài liệu hết hạn sau 30 ngày"
+
+#. module: hr_document_vn
+#: model:ir.model.fields,field_description:hr_document_vn.field_hr_document_type_id_2259
+#: model:ir.ui.view,arch_db:hr_document_vn.view_hr_document_search
+msgid "Type"
+msgstr "Loại"
+
+#. module: hr_document_vn
+#: model:hr.document.type,name:hr_document_vn.doc_type_visa
+msgid "Visa"
+msgstr "Thị Thực"
+
+#. module: hr_document_vn
+#: model:ir.actions.server,name:hr_document_vn.weekly_send_mail_from_hr_documents_ir_actions_server
+#: model:ir.cron,cron_name:hr_document_vn.weekly_send_mail_from_hr_documents
+#: model:ir.cron,name:hr_document_vn.weekly_send_mail_from_hr_documents
+msgid "Weekly Send Mail From HR Documents"
+msgstr "Thông Báo Chứng Từ Hết Hạn"
+
+#. module: hr_document_vn
+#: model:ir.model,name:hr_document_vn.model_hr_document
+msgid "hr.document"
+msgstr "Chứng Từ"
+
+#. module: hr_document_vn
+#: model:ir.model,name:hr_document_vn.model_hr_document_type
+msgid "hr.document.type"
+msgstr "Loại Chứng Từ"
+
+#. module: hr_document_vn
+#: model:ir.model,name:hr_document_vn.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"
+
