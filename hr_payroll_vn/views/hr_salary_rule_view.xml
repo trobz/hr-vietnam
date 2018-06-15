@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="view_hr_salary_rule_tree_inherit" model="ir.ui.view">
+        <field name="name">view.hr.salary.rule.tree.inherit</field>
+        <field name="model">hr.salary.rule</field>
+        <field name="inherit_id" ref="hr_payroll.hr_salary_rule_list"/>
+        <field name="arch" type="xml">
+            <field name="category_id" position="after">
+                <field name="is_unique_on_payslip"/>
+                <field name="is_adjust"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_hr_salary_rule_form_inherit" model="ir.ui.view">
+        <field name="name">view.hr.salary.rule.form.inherit</field>
+        <field name="model">hr.salary.rule</field>
+        <field name="inherit_id" ref="hr_payroll.hr_salary_rule_form"/>
+        <field name="arch" type="xml">
+            <field name="appears_on_payslip" position="after">
+                <field name="is_unique_on_payslip"/>
+                <field name="is_adjust"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_hr_rule_search_inherit" model="ir.ui.view">
+        <field name="name">view.hr.salary.rule.search.inherit</field>
+        <field name="model">hr.salary.rule</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_rule_filter"/>
+        <field name="arch" type="xml">
+            <field name="category_id" position="after">
+                <field name="is_unique_on_payslip"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

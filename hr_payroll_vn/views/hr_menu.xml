@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.actions.act_window" id="action_hr_salary_adjustment">
+        <field name="name">Salary Adjustment</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.salary.adjustment</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+    </record>
+
+    <menuitem name="Salary Adjustments"
+              parent="hr_payroll.menu_hr_payroll_root"
+              sequence="10" id="menu_hr_salary_adjustment"/>
+
+    <menuitem name="Salary Adjustment" parent="menu_hr_salary_adjustment"
+              sequence="1" id="menu_hr_salary_adjustment_child"
+              action="action_hr_salary_adjustment"/>
+
+</odoo>

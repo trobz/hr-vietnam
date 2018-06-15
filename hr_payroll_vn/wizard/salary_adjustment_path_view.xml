@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_salary_adjustment_path_wizard" model="ir.ui.view">
+        <field name="name">salary.adjustment.path.form</field>
+        <field name="model">salary.adjustment.path</field>
+        <field name="arch" type="xml">
+            <form string="Generate Salary Adjustment">
+                <group col="4">
+                    <field name="name" colspan="4"/>
+                    <newline/>
+                    <field name="date"/>
+                    <field name="rule_id"/>
+                    <field name="amount"/>
+                </group>
+                <group col="4">
+                    <field name="employee_ids" colspan="4"/>
+                </group>
+                <footer>
+                    <button string="Import" name="action_import" type="object"
+                            class="btn-primary"/>
+                    <button string="Cancel" class="btn-default"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_salary_adjustment_path"
+            model="ir.actions.act_window">
+        <field name="name">Generate Salary Adjustment</field>
+        <field name="res_model">salary.adjustment.path</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_salary_adjustment_path_wizard"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem name="Generate Salary Adjustment"
+              parent="menu_hr_salary_adjustment"
+              sequence="10" id="menu_view_salary_adjustment_path"
+              action="action_view_salary_adjustment_path"/>
+
+</odoo>
