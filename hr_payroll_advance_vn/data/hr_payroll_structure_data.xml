@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+    <!-- Salary Structure -->
+    <record id="hr_payroll_structure_advanced_salary"
+            model="hr.payroll.structure">
+        <field name="code">AdvSal</field>
+        <field name="parent_id"></field>
+        <field name="name">Advanced Salary</field>
+        <field
+                eval="[(6, 0, [
+                ref('hr_rule_advanced_salary'), 
+                ])]"
+                name="rule_ids"/>
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+</odoo>
+

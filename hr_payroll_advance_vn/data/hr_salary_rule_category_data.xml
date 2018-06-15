@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+    <record id="ADV" model="hr.salary.rule.category">
+        <field name="name">Advanced Salary</field>
+        <field name="code">ADV</field>
+    </record>
+</odoo>
+

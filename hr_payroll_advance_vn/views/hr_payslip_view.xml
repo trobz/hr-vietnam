@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_payslip_form_advance" model="ir.ui.view">
+        <field name="name">view.hr.payslip.form.advance</field>
+        <field name="model">hr.payslip</field>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <form string="Payslip">
+                <header>
+                    <button string="Approve" name="hr_verify_sheet"
+                            states="draft"
+                            class="oe_highlight" type="object"/>
+                    <button string="Pay" name="action_payslip_done"
+                            states="verify"
+                            groups="hr.group_hr_manager" type="object"
+                            class="oe_highlight"/>
+                    <button string="Cancel Payslip"
+                            name="action_payslip_cancel"
+                            type="object"
+                            states="draft,hr_check,confirm,verify"
+                            groups="account.group_account_manager,hr.group_hr_manager"/>
+                    <button string="Set to Draft" name="action_payslip_draft"
+                            type="object" states="cancel"
+                            groups="account.group_account_manager,hr.group_hr_manager"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,verify,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="employee_id" class="oe_edit_only"/>
+                        <h1>
+                            <field name="employee_id"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="date_from" string="Request Date"/>
+                            <field name="date_to" invisible="1"/>
+                            <field name="advance_amount"/>
+                        </group>
+                        <group>
+                            <field name="number"/>
+                            <field name="contract_id" required="1"
+                                   domain="[('employee_id','=',employee_id),('date_start','&lt;=',date_to),'|',('date_end','&gt;=',date_from),('date_end','=',False)]"
+                                   context="{'default_employee_id': employee_id}"/>
+                            <field name="struct_id" required="1"
+                                   invisible="1"/>
+                            <field name="is_advance" invisible="1"/>
+                        </group>
+                    </group>
+                    <separator string="Notes"/>
+                    <field name="note" string="Reason"/>
+                    <notebook>
+                        <page string="Accounting">
+                            <group name="accounting">
+                                <field name="paid" readonly="1"/>
+                                <field name="journal_id" required="1"/>
+                                <field name="move_id" readonly="1"/>
+                            </group>
+                        </page>
+                        <page string="Other Information ">
+                            <group col="4">
+
+                                <field name="name"/>
+                                <field name="credit_note"/>
+                                <field name="company_id"
+                                       groups="base.group_multi_company"/>
+                                <field name="payslip_run_id"
+                                       domain="[('state','=','draft')]"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_hr_payslip_tree_advance" model="ir.ui.view">
+        <field name="name">hr.payslip.tree.advance</field>
+        <field name="model">hr.payslip</field>
+        <field name="arch" type="xml">
+            <tree decoration-info="state in ('confirm','hr_check','accont_check')"
+                  decoration-muted="state == 'cancel'" string="Payslips">
+                <field name="number"/>
+                <field name="employee_id"/>
+                <field name="date_from"/>
+                <field name="advance_amount"/>
+                <field name="state"/>
+                <field name="journal_id" invisible="1"/>
+                <field name="company_id" groups="base.group_multi_company"
+                       options="{'no_create': True}"/>
+                <field name="payslip_run_id" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_payslip_search_advance" model="ir.ui.view">
+        <field name="name">view.hr.payslip.search.advance</field>
+        <field name="model">hr.payslip</field>
+        <field name="arch" type="xml">
+            <search string="Search Advances">
+                <field name="name" string="Advances"
+                       filter_domain="['|',('name','ilike',self),('number','ilike',self)]"/>
+                <field name="date_from"/>
+                <field name="state"/>
+                <field name="journal_id"/>
+                <field name="employee_id"/>
+                <filter string="Open"
+                        domain="[('state','in',('draft','verify'))]"
+                        help="Open Slip"/>
+                <filter string="Paid" domain="[('state','=','done')]"
+                        help="Paid Slip"/>
+                <filter string="Current Month"
+                        domain="[('date_from','&lt;=',(context_today()+relativedelta(day=31)).strftime('%%Y-%%m-%%d')),('date_from','&gt;=',(context_today()-relativedelta(day=1)).strftime('%%Y-%%m-%%d'))]"/>
+                <filter string="Last Month"
+                        domain="[('date_from','&lt;=', (context_today() - relativedelta(day=31, months=1)).strftime('%%Y-%%m-%%d')),('date_from','&gt;=',(context_today() - relativedelta(day=1,months=1)).strftime('%%Y-%%m-%%d'))]"/>
+                <group expand="0" string="Group By...">
+                    <filter string="Employees" name="employee_id"
+                            context="{'group_by':'employee_id'}"/>
+                    <filter string="Companies" name="company_id"
+                            context="{'group_by':'company_id'}"
+                            groups="base.group_multi_company"/>
+                    <filter string="States" name="state"
+                            context="{'group_by':'state'}"/>
+                    <filter string="Journal" name="journal_id"
+                            context="{'group_by':'journal_id'}"/>
+                    <filter string="Request Date" name="state"
+                            context="{'group_by':'date_from'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!--Inherit the original payslip view -->
+    <record id="view_hr_payslip_tree_inherit" model="ir.ui.view">
+        <field name="name">hr.payslip.view.tree.inherit</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_tree"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="is_advance"/>
+            </field>
+        </field>
+    </record>
+    <record id="view_hr_payslip_search_inherit" model="ir.ui.view">
+        <field name="name">view.hr.payslip.search.inherit</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_filter"/>
+        <field name="arch" type="xml">
+            <field name="payslip_run_id" position="after">
+                <filter string="Monthly Payslip" name="monthly_payslip"
+                        domain="[('is_advance','=',False)]"/>
+            </field>
+        </field>
+    </record>
+</odoo>

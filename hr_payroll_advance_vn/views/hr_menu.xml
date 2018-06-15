@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_hr_payslip_advance" model="ir.actions.act_window">
+        <field name="name">Advanced Payslips</field>
+        <field name="res_model">hr.payslip</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_advance','=',1)]</field>
+        <field name="context">{"default_is_advance":1}</field>
+        <field name="search_view_id" ref="view_hr_payslip_search_advance"/>
+    </record>
+
+    <record id="action_hr_payslip_advance_form"
+            model="ir.actions.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_hr_payslip_form_advance"/>
+        <field name="act_window_id" ref="action_hr_payslip_advance"/>
+    </record>
+
+    <record id="action_hr_payslip_advance_tree"
+            model="ir.actions.act_window.view">
+        <field name="sequence" eval="0"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_hr_payslip_tree_advance"/>
+        <field name="act_window_id" ref="action_hr_payslip_advance"/>
+    </record>
+
+    <menuitem action="action_hr_payslip_advance" id="menu_hr_payslip_advance"
+              parent="hr_payroll.menu_hr_payroll_root" sequence="19"/>
+
+    <!-- Menu Payslip: default search only monthly payslips -->
+    <record id="hr_payroll.action_view_hr_payslip_form"
+            model="ir.actions.act_window">
+        <field name="context">{'search_default_monthly_payslip':1}</field>
+    </record>
+</odoo>
