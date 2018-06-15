@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="school_school_1" model="school.school">
+        <field name="name">Đại học Bách khoa</field>
+        <field name="categ_id" ref="school_category_HDQGHCM"/>
+    </record>
+    <record id="school_school_2" model="school.school">
+        <field name="name">Đại học Công nghệ Thông tin</field>
+        <field name="categ_id" ref="school_category_HDQGHCM"/>
+    </record>
+    <record id="school_school_3" model="school.school">
+        <field name="name">Đại học Khoa học Tự nhiên</field>
+        <field name="categ_id" ref="school_category_HDQGHCM"/>
+    </record>
+    <record id="school_school_4" model="school.school">
+        <field name="name">Đại học Khoa học Xã hội và Nhân văn</field>
+        <field name="categ_id" ref="school_category_HDQGHCM"/>
+    </record>
+    <record id="school_school_5" model="school.school">
+        <field name="name">Trường Đại học Kinh tế - Luật</field>
+        <field name="categ_id" ref="school_category_HDQGHCM"/>
+    </record>
+    <record id="school_school_6" model="school.school">
+        <field name="name">Đại học Quốc tế</field>
+        <field name="categ_id" ref="school_category_HDQGHCM"/>
+    </record>
+    <record id="school_school_7" model="school.school">
+        <field name="name">Trường Đại học An Giang</field>
+        <field name="categ_id" ref="school_category_HDQGHCM"/>
+    </record>
+    <record id="school_school_8" model="school.school">
+        <field name="name">Trường Đại học Việt - Đức</field>
+        <field name="categ_id" ref="school_category_HDQGHCM"/>
+    </record>
+    <record id="school_school_17" model="school.school">
+        <field name="name">Đại học Bách khoa</field>
+        <field name="categ_id" ref="school_category_DHDN"/>
+    </record>
+    <record id="school_school_18" model="school.school">
+        <field name="name">Đại học Sư phạm Kỹ thuật</field>
+        <field name="categ_id" ref="school_category_DHDN"/>
+    </record>
+    <record id="school_school_19" model="school.school">
+        <field name="name">Đại học Kinh tế</field>
+        <field name="categ_id" ref="school_category_DHDN"/>
+    </record>
+    <record id="school_school_20" model="school.school">
+        <field name="name">Đại học Ngoại ngữ</field>
+        <field name="categ_id" ref="school_category_DHDN"/>
+    </record>
+    <record id="school_school_21" model="school.school">
+        <field name="name">Đại học Sư phạm</field>
+        <field name="categ_id" ref="school_category_DHDN"/>
+    </record>
+    <record id="school_school_22" model="school.school">
+        <field name="name">Đại học Công nghệ Thông tin và Truyền thông</field>
+        <field name="categ_id" ref="school_category_DHTN"/>
+    </record>
+    <record id="school_school_23" model="school.school">
+        <field name="name">Đại học Khoa học</field>
+        <field name="categ_id" ref="school_category_DHTN"/>
+    </record>
+    <record id="school_school_24" model="school.school">
+        <field name="name">Đại học Kinh tế và Quản trị Kinh doanh</field>
+        <field name="categ_id" ref="school_category_DHTN"/>
+    </record>
+    <record id="school_school_25" model="school.school">
+        <field name="name">Đại học Kỹ thuật Công nghiệp</field>
+        <field name="categ_id" ref="school_category_DHTN"/>
+    </record>
+    <record id="school_school_26" model="school.school">
+        <field name="name">Đại học Nông Lâm</field>
+        <field name="categ_id" ref="school_category_DHTN"/>
+    </record>
+    <record id="school_school_27" model="school.school">
+        <field name="name">Đại học Sư phạm</field>
+        <field name="categ_id" ref="school_category_DHTN"/>
+    </record>
+    <record id="school_school_28" model="school.school">
+        <field name="name">Đại học Y Dược</field>
+        <field name="categ_id" ref="school_category_DHTN"/>
+    </record>
+    <record id="school_school_29" model="school.school">
+        <field name="name">Đại học Công nghệ</field>
+        <field name="categ_id" ref="school_category_DHQGHN"/>
+    </record>
+    <record id="school_school_30" model="school.school">
+        <field name="name">Đại học Giáo dục</field>
+        <field name="categ_id" ref="school_category_DHQGHN"/>
+    </record>
+    <record id="school_school_31" model="school.school">
+        <field name="name">Đại học Kinh tế</field>
+        <field name="categ_id" ref="school_category_DHQGHN"/>
+    </record>
+    <record id="school_school_32" model="school.school">
+        <field name="name">Đại học Khoa học Tự nhiên</field>
+        <field name="categ_id" ref="school_category_DHQGHN"/>
+    </record>
+    <record id="school_school_33" model="school.school">
+        <field name="name">Đại học Khoa học Xã hội và Nhân văn</field>
+        <field name="categ_id" ref="school_category_DHQGHN"/>
+    </record>
+    <record id="school_school_34" model="school.school">
+        <field name="name">Đại học Ngoại ngữ</field>
+        <field name="categ_id" ref="school_category_DHQGHN"/>
+    </record>
+    <record id="school_school_35" model="school.school">
+        <field name="name">Trường Đại học Việt - Nhật</field>
+        <field name="categ_id" ref="school_category_DHQGHN"/>
+    </record>
+    <record id="school_school_36" model="school.school">
+        <field name="name">Đại học Công nghiệp Việt-Hung</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_37" model="school.school">
+        <field name="name">Trường Đại học Bách khoa Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_38" model="school.school">
+        <field name="name">Trường Đại học Công đoàn</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_39" model="school.school">
+        <field name="name">Trường Đại học Công nghệ Giao thông Vận tải</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_40" model="school.school">
+        <field name="name">Trường Đại học Công nghiệp Dệt May Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_41" model="school.school">
+        <field name="name">Trường Đại học Công nghiệp Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_42" model="school.school">
+        <field name="name">Trường Đại học Công nghiệp Quảng Ninh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_43" model="school.school">
+        <field name="name">Trường Đại học Công nghiệp Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_44" model="school.school">
+        <field name="name">Trường Đại học Công nghiệp Thực phẩm Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_45" model="school.school">
+        <field name="name">Trường Đại học Công nghiệp Việt Trì</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_46" model="school.school">
+        <field name="name">Trường Đại học Dầu khí Việt Nam</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_47" model="school.school">
+        <field name="name">Trường Đại học Điện lực</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_48" model="school.school">
+        <field name="name">Trường Đại học Điều dưỡng Nam Định</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_49" model="school.school">
+        <field name="name">Trường Đại học Dược Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_50" model="school.school">
+        <field name="name">Đại học Giao thông Vận tải Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_51" model="school.school">
+        <field name="name">Trường Đại học Giao thông Vận tải</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_52" model="school.school">
+        <field name="name">Trường Đại học Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_53" model="school.school">
+        <field name="name">Trường Đại học Hàng hải Việt Nam</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_54" model="school.school">
+        <field name="name">Trường Đại học Khoa học và Công nghệ Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_55" model="school.school">
+        <field name="name">Trường Đại học Kiểm sát Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_56" model="school.school">
+        <field name="name">Trường Đại học Kiến trúc Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_57" model="school.school">
+        <field name="name">Trường Đại học Kiến trúc Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_58" model="school.school">
+        <field name="name">Trường Đại học Kinh tế - Kỹ thuật Công nghiệp</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_59" model="school.school">
+        <field name="name">Trường Đại học Kinh tế Quốc dân</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_60" model="school.school">
+        <field name="name">Trường Đại học Kinh tế Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_61" model="school.school">
+        <field name="name">Trường Đại học Kỹ thuật Y - Dược Đà Nẵng</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_62" model="school.school">
+        <field name="name">Trường Đại học Kỹ thuật Y tế Hải Dương</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_63" model="school.school">
+        <field name="name">Trường Đại học Lâm nghiệp Việt Nam</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_64" model="school.school">
+        <field name="name">Trường Đại học Lao động - Xã hội cơ sở 2, Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_65" model="school.school">
+        <field name="name">Trường Đại học Lao động - Xã hội, cơ sở Sơn Tây</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_66" model="school.school">
+        <field name="name">Trường Đại học Lao động - Xã hội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_67" model="school.school">
+        <field name="name">Trường Đại học Luật Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_68" model="school.school">
+        <field name="name">Trường Đại học Luật Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_69" model="school.school">
+        <field name="name">Trường Đại học Mỏ - Địa chất</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_70" model="school.school">
+        <field name="name">Trường Đại học Mở Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_71" model="school.school">
+        <field name="name">Trường Đại học Mỹ thuật Công nghiệp</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_72" model="school.school">
+        <field name="name">Trường Đại học Mỹ thuật Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_73" model="school.school">
+        <field name="name">Trường Đại học Mỹ thuật Việt Nam</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_74" model="school.school">
+        <field name="name">Trường Đại học Ngân hàng Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_75" model="school.school">
+        <field name="name">Trường Đại học Ngoại thương cơ sở 2, Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_76" model="school.school">
+        <field name="name">Trường Đại học Ngoại thương, cơ sở Quảng Ninh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_77" model="school.school">
+        <field name="name">Trường Đại học Ngoại thương</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_78" model="school.school">
+        <field name="name">Trường Đại học Nội vụ Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_79" model="school.school">
+        <field name="name">Trường Đại học Nông Lâm Bắc Giang</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_80" model="school.school">
+        <field name="name">Trường Đại học Nông Lâm Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_81" model="school.school">
+        <field name="name">Trường Đại học Phạm Văn Đồng</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_82" model="school.school">
+        <field name="name">Trường Đại học Sân khấu - Điện ảnh Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_83" model="school.school">
+        <field name="name">Đại học Sân khấu - Điện ảnh Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_84" model="school.school">
+        <field name="name">Trường Đại học Sao Đỏ</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_85" model="school.school">
+        <field name="name">Trường Đại học Sư phạm Hà Nội 2</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_86" model="school.school">
+        <field name="name">Trường Đại học Sư phạm Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_87" model="school.school">
+        <field name="name">Trường Đại học Sư phạm Kỹ thuật Hưng Yên</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_88" model="school.school">
+        <field name="name">Trường Đại học Sư phạm Kỹ thuật Nam Định</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_89" model="school.school">
+        <field name="name">Trường Đại học Sư phạm Kỹ thuật Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_90" model="school.school">
+        <field name="name">Trường Đại học Sư phạm kỹ thuật Vĩnh Long</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_91" model="school.school">
+        <field name="name">Trường Đại học Sư phạm Kỹ thuật Vinh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_92" model="school.school">
+        <field name="name">Trường Đại học Sư phạm Nghệ thuật Trung ương</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_93" model="school.school">
+        <field name="name">Trường Đại học Sư phạm Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_94" model="school.school">
+        <field name="name">Trường Đại học Sư phạm Thể dục Thể thao Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_95" model="school.school">
+        <field name="name">Trường Đại học Sư phạm Thể dục Thể thao Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_96" model="school.school">
+        <field name="name">Trường Đại học Tài chính - Kế toán</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_97" model="school.school">
+        <field name="name">Trường Đại học Tài chính - Marketing</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_98" model="school.school">
+        <field name="name">Trường Đại học Tài chính - Quản trị kinh doanh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_99" model="school.school">
+        <field name="name">Trường Đại học Tài nguyên và Môi trường Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_100" model="school.school">
+        <field name="name">Trường Đại học Tài nguyên và Môi trường Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_101" model="school.school">
+        <field name="name">Trường Đại học Thể dục Thể thao Bắc Ninh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_102" model="school.school">
+        <field name="name">Trường Đại học Thể dục Thể thao Đà Nẵng</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_103" model="school.school">
+        <field name="name">Đại học Thể dục Thể thao Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_104" model="school.school">
+        <field name="name">Đại học Thương mại</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_105" model="school.school">
+        <field name="name">Đại học Thủy lợi cơ sở 2, Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_106" model="school.school">
+        <field name="name">Trường Đại học Thủy lợi</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_107" model="school.school">
+        <field name="name">Trường Đại học Tôn Đức Thắng, cơ sở Bảo Lộc</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_108" model="school.school">
+        <field name="name">Trường Đại học Tôn Đức Thắng, cơ sở Cà Mau</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_109" model="school.school">
+        <field name="name">Trường Đại học Tôn Đức Thắng, cơ sở Nha Trang</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_110" model="school.school">
+        <field name="name">Trường Đại học Tôn Đức Thắng</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_111" model="school.school">
+        <field name="name">Trường Đại học Văn hóa Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_112" model="school.school">
+        <field name="name">Trường Đại học Văn hóa Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_113" model="school.school">
+        <field name="name">Trường Đại học Xây dựng Miền Tây</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_114" model="school.school">
+        <field name="name">Trường Đại học Xây dựng miền Trung</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_115" model="school.school">
+        <field name="name">Trường Đại học Xây dựng</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_116" model="school.school">
+        <field name="name">Đại học Y Dược Cần Thơ</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_117" model="school.school">
+        <field name="name">Trường Đại học Y Dược Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_118" model="school.school">
+        <field name="name">Trường Đại học Y Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_119" model="school.school">
+        <field name="name">Đại học Y Dược Hải Phòng</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_120" model="school.school">
+        <field name="name">Đại học Y Phạm Ngọc Thạch</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_121" model="school.school">
+        <field name="name">Trường Đại học Y khoa Vinh</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_122" model="school.school">
+        <field name="name">Trường Đại học Y tế Công cộng</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_123" model="school.school">
+        <field name="name">Đại học Y Dược Thái Bình</field>
+        <field name="categ_id" ref="school_category_DHCL"/>
+    </record>
+    <record id="school_school_124" model="school.school">
+        <field name="name">Học viện Âm nhạc Huế</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_125" model="school.school">
+        <field name="name">Học viện Âm nhạc Quốc gia Việt Nam</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_126" model="school.school">
+        <field name="name">Học viện Báo chí và Tuyên truyền</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_127" model="school.school">
+        <field name="name">Học viện Cán bộ Quản lý xây dựng và đô thị</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_128" model="school.school">
+        <field name="name">Học viện Cán bộ Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_129" model="school.school">
+        <field name="name">Học viện Chính sách và phát triển</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_130" model="school.school">
+        <field name="name">Học viện Chính trị - Hành chính Quốc gia Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_131" model="school.school">
+        <field name="name">Học viện Công nghệ Bưu chính Viễn thông cơ sở 2, Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_132" model="school.school">
+        <field name="name">Học viện Công nghệ Bưu chính Viễn thông</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_133" model="school.school">
+        <field name="name">Học viện Dân tộc</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_134" model="school.school">
+        <field name="name">Học viện Hàng không Việt Nam</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_135" model="school.school">
+        <field name="name">Học viện Hành chính</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_136" model="school.school">
+        <field name="name">Học viện Hành chính cơ sở 2, Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_137" model="school.school">
+        <field name="name">Học viện Khoa học và Công nghệ</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_138" model="school.school">
+        <field name="name">Học viện Khoa học, Công nghệ và Đổi mới sáng tạo</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_139" model="school.school">
+        <field name="name">Học viện Khoa học xã hội</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_140" model="school.school">
+        <field name="name">Học viện Ngân hàng</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_141" model="school.school">
+        <field name="name">Học viện Ngoại giao Việt Nam</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_142" model="school.school">
+        <field name="name">Học viện Phụ nữ Việt Nam</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_143" model="school.school">
+        <field name="name">Học viện Quản lý Giáo dục</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_144" model="school.school">
+        <field name="name">Học viện Tài chính</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_145" model="school.school">
+        <field name="name">Học viện Thanh thiếu niên</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_146" model="school.school">
+        <field name="name">Học viện Tòa án</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_147" model="school.school">
+        <field name="name">Học viện Tư Pháp</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_148" model="school.school">
+        <field name="name">Học viện Xây dựng Đảng</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_149" model="school.school">
+        <field name="name">Học viện Y dược học cổ truyền Việt Nam</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_150" model="school.school">
+        <field name="name">Nhạc viện Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_151" model="school.school">
+        <field name="name">Viện Đại học Mở Hà Nội</field>
+        <field name="categ_id" ref="school_category_HV"/>
+    </record>
+    <record id="school_school_152" model="school.school">
+        <field name="name">Đại học RMIT</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_153" model="school.school">
+        <field name="name">Học viện Thiết kế và Thời trang London</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_154" model="school.school">
+        <field name="name">Phân hiệu Trường Đại học Bình Dương tại Cà Mau</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_155" model="school.school">
+        <field name="name">Đại học Thành Đông</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_156" model="school.school">
+        <field name="name">Trường Đại học Bà Rịa - Vũng Tàu</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_157" model="school.school">
+        <field name="name">Trường Đại học Bình Dương</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_158" model="school.school">
+        <field name="name">Trường Đại học Buôn Ma Thuột</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_159" model="school.school">
+        <field name="name">Trường Đại học Chu Văn An</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_160" model="school.school">
+        <field name="name">Trường Đại học Công nghệ Đông Á</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_161" model="school.school">
+        <field name="name">Trường Đại học Công nghệ Đồng Nai</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_162" model="school.school">
+        <field name="name">Trường Đại học Công nghệ Sài Gòn</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_163" model="school.school">
+        <field name="name">Trường Đại học Công nghệ Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_164" model="school.school">
+        <field name="name">Trường Đại học Công nghệ và Quản lý Hữu nghị</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_165" model="school.school">
+        <field name="name">Trường Đại học Công nghệ Vạn Xuân</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_166" model="school.school">
+        <field name="name">Trường Đại học Công nghiệp Vinh</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_167" model="school.school">
+        <field name="name">Trường Đại học Cửu Long</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_168" model="school.school">
+        <field name="name">Trường Đại học Đại Nam</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_169" model="school.school">
+        <field name="name">Đại học Hải Phòng</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_170" model="school.school">
+        <field name="name">Đại học Văn Lang</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_171" model="school.school">
+        <field name="name">Đại học Yersin Đà Lạt</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_172" model="school.school">
+        <field name="name">Trường Đại học Đông Á</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_173" model="school.school">
+        <field name="name">Trường Đại học Đông Đô</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_174" model="school.school">
+        <field name="name">Trường Đại học Duy Tân</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_175" model="school.school">
+        <field name="name">Trường Đại học FPT</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_176" model="school.school">
+        <field name="name">Trường Đại học Fulbright Việt Nam</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_177" model="school.school">
+        <field name="name">Trường Đại học Hà Hoa Tiên</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_178" model="school.school">
+        <field name="name">Trường Đại học Hòa Bình</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_179" model="school.school">
+        <field name="name">Trường Đại học Hoa Sen</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_180" model="school.school">
+        <field name="name">Trường Đại học Hùng Vương Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_181" model="school.school">
+        <field name="name">Trường Đại học Kiến trúc Đà Nẵng</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_182" model="school.school">
+        <field name="name">Trường Đại học Kinh Bắc</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_183" model="school.school">
+        <field name="name">Trường Đại học Kinh doanh và Công nghệ Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_184" model="school.school">
+        <field name="name">Trường Đại học Kinh tế - Tài chính Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_185" model="school.school">
+        <field name="name">Đại học Kinh tế - Công nghiệp Long An</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_186" model="school.school">
+        <field name="name">Trường Đại học Kinh tế- Kỹ thuật Bình Dương</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_187" model="school.school">
+        <field name="name">Trường Đại học Lạc Hồng</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_188" model="school.school">
+        <field name="name">Trường Đại học Lương Thế Vinh</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_189" model="school.school">
+        <field name="name">Trường Đại học Mỹ tại Việt Nam - AUV Đà Nẵng</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_190" model="school.school">
+        <field name="name">Trường Đại học Mỹ thuật Công nghiệp Á Châu</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_191" model="school.school">
+        <field name="name">Trường Đại học Nam Cần Thơ</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_192" model="school.school">
+        <field name="name">Trường Đại học Ngoại ngữ Tin học Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_193" model="school.school">
+        <field name="name">Trường Đại học Nguyễn Tất Thành</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_194" model="school.school">
+        <field name="name">Trường Đại học Nguyễn Trãi</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_195" model="school.school">
+        <field name="name">Trường Đại học Phan Châu Trinh</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_196" model="school.school">
+        <field name="name">Trường Đại học Phan Thiết</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_197" model="school.school">
+        <field name="name">Trường Đại học Phú Xuân</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_198" model="school.school">
+        <field name="name">Đại học Phương Đông</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_199" model="school.school">
+        <field name="name">Trường Đại học Quang Trung</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_200" model="school.school">
+        <field name="name">Trường Đại học Quốc tế Bắc Hà</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_201" model="school.school">
+        <field name="name">Trường Đại học Quốc tế Hồng Bàng</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_202" model="school.school">
+        <field name="name">Trường Đại học Quốc tế Miền Đông</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_203" model="school.school">
+        <field name="name">Trường Đại học Quốc tế Sài Gòn</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_204" model="school.school">
+        <field name="name">Trường Đại học Tài chính - Ngân hàng Hà Nội</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_205" model="school.school">
+        <field name="name">Trường Đại học Tân Tạo</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_206" model="school.school">
+        <field name="name">Trường Đại học Tây Đô</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_207" model="school.school">
+        <field name="name">Trường Đại học Thái Bình Dương</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_208" model="school.school">
+        <field name="name">Trường Đại học Thăng Long</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_209" model="school.school">
+        <field name="name">Trường Đại học Thành Đô</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_210" model="school.school">
+        <field name="name">Trường Đại học Thành Tây</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_211" model="school.school">
+        <field name="name">Trường Đại học Trưng Vương</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_212" model="school.school">
+        <field name="name">Đại học Gia Định</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_213" model="school.school">
+        <field name="name">Trường Đại học Văn Hiến</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_214" model="school.school">
+        <field name="name">Trường Đại học Việt Bắc</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_215" model="school.school">
+        <field name="name">Trường Đại học Võ Trường Toản</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_216" model="school.school">
+        <field name="name">Trường Đại học Y khoa Tokyo Việt Nam</field>
+        <field name="categ_id" ref="school_category_DHTTDL"/>
+    </record>
+    <record id="school_school_217" model="school.school">
+        <field name="name">Phân hiệu Đại học Cần Thơ tại Hậu Giang</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_218" model="school.school">
+        <field name="name">Phân hiệu Đại học Công nghệ Giao thông Vận tải tại Thái Nguyên</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_219" model="school.school">
+        <field name="name">Phân hiệu Đại học Công nghệ Giao thông Vận tải tại Vĩnh Phúc</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_220" model="school.school">
+        <field name="name">Phân hiệu Đại học Công nghiệp Thành phố Hồ Chí Minh tại Quảng Ngãi</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_221" model="school.school">
+        <field name="name">Phân hiệu Đại học Giao thông Vận tải tại Thành phố Hồ Chí Minh</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_222" model="school.school">
+        <field name="name">Phân hiệu Đại học Kiến trúc Thành phố Hồ Chí Minh tại Cần Thơ</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_223" model="school.school">
+        <field name="name">Phân hiệu Đại học Kiến trúc Thành phố Hồ Chí Minh tại Đà Lạt</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_224" model="school.school">
+        <field name="name">Phân hiệu Đại học Mỏ-Địa chất tại Quảng Ninh</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_225" model="school.school">
+        <field name="name">Phân hiệu Đại học Mỏ-Địa chất tại Vũng Tàu</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_226" model="school.school">
+        <field name="name">Phân hiệu Đại học Nội vụ Hà Nội tại Quảng Nam</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_227" model="school.school">
+        <field name="name">Phân hiệu Đại học Nông Lâm Thành phố Hồ Chí Minh tại Gia Lai</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_228" model="school.school">
+        <field name="name">Phân hiệu Đại học Nông Lâm Thành phố Hồ Chí Minh tại Ninh Thuận</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_229" model="school.school">
+        <field name="name">Phân hiệu Đại học Lâm nghiệp Việt Nam tại Đồng Nai</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_230" model="school.school">
+        <field name="name">Phân hiệu Đại học Tài chính - Kế toán tại Thừa Thiên-Huế</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_231" model="school.school">
+        <field name="name">Phân hiệu Đại học Tài nguyên và Môi trường Hà Nội tại Thanh Hóa</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+    <record id="school_school_232" model="school.school">
+        <field name="name">Phân hiệu Đại học Bình Dương tại Cà Mau</field>
+        <field name="categ_id" ref="school_category_PH"/>
+    </record>
+</odoo>
+

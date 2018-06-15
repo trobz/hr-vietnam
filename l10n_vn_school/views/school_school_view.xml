@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- School-->
+
+    <record id="school_school_search_view" model="ir.ui.view">
+        <field name="name">school.school.search</field>
+        <field name="model">school.school</field>
+        <field name="arch" type="xml">
+            <search string="School">
+                <field name="name" string="School" filter_domain="['|','|',('code','ilike',self),('name','ilike',self),('description','ilike',self)]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="school_school_form_view" model="ir.ui.view">
+        <field name="name">school.school.form</field>
+        <field name="model">school.school</field>
+        <field name="arch" type="xml">
+            <form string="School">
+                <group>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="description"/>
+                    <field name="categ_id"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="school_school_list_view" model="ir.ui.view">
+        <field name="name">school.school.list</field>
+        <field name="model">school.school</field>
+        <field eval="8" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="School" editable="top">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="description"/>
+                <field name="categ_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="school_school_action" model="ir.actions.act_window">
+        <field name="name">School</field>
+        <field name="res_model">school.school</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
