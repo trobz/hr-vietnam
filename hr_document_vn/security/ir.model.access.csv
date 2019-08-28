@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_crud_hr_document_type,crud_hr_document_type,model_hr_document_type,hr.group_hr_user,1,1,1,1
-access_r_hr_document_type,r_hr_document_type,model_hr_document_type,base.group_user,1,0,0,0
-access_crud_hr_document,crud_hr_document,model_hr_document,hr.group_hr_user,1,1,1,1
-access_r_hr_document,r_hr_document,model_hr_document,base.group_user,1,0,0,0

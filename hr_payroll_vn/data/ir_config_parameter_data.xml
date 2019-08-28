@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo noupdate="1">
-    <!-- Leave type to calculate remaining_leaves in the payslip computation -->
-    <!-- For the specific project, only need to override this parameter for a different calculation of remaining_leaves-->
-    <record id="default_remaining_leave_type" model="ir.config_parameter">
-        <field name="key">default_remaining_leave_type</field>
-        <field name="value">['Casual leave (paid)']</field>
-    </record>
-</odoo>

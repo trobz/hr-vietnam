@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_hr_contract_allowance_user,hr.contract.allowance.user,model_hr_contract_allowance,hr.group_hr_user,1,1,1,1
-access_hr_contract_allowance_emp,hr.contract.allowance.emp,model_hr_contract_allowance,base.group_user,1,0,0,0
